@@ -17,12 +17,15 @@ body{
 /* Header */
 .header1 {
  background-color: #497B51;
- display: flex;
  align-items: center;
- justify-content: space-between;
- padding: 0 10%;
  min-height: 74px;
- padding-top: 30px;
+ display: flex;
+ justify-content: space-between;
+ padding: 50px 20px 0px;
+}
+
+.material-symbols-outlined {
+  color: white;
 }
 
 .header2 {
@@ -34,15 +37,8 @@ body{
   min-height: 48px;
  }
 
-.logo {
-  display: flex;
-  column-gap: 10px;
-  align-items: center;
-  color: white;
-}
-
 .logo img {
-  width: 100%;
+  width: 150%;
 }
 
 .nav ul {
@@ -60,4 +56,331 @@ body{
 
 .nav a:hover {
   color: #DE4C31;
+}
+
+/* HOME */
+.home {
+  object-fit: cover;
+  height: 9rem;
+  width: 83%;
+  margin-left: 6.75rem;
+}
+
+.essentail-collection {
+  display: flex;
+  margin-left: 6.75rem;
+}
+
+h4 {
+  color:#DE4C31;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 100;
+}
+
+.home-essential {
+  background-color: #497B51;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 9.5rem;
+  height: 15.688rem;
+  clip-path: ellipse(70px 120px);
+}
+
+.essential {
+  width: 72px;
+}
+
+.classicrock-p {
+  text-align: center;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: space-between;
+  padding: 20px 20px 20px 20px;
+  max-width: 960px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+
+.weekalbum {
+  display: flex;
+}
+
+.albumofweek {
+  text-align: center;
+}
+
+button {
+  padding: .5rem;
+  border-radius: 1.5rem;
+  margin: 1rem 0;
+  border: none;
+  width: 40%;
+}
+
+.week {
+  margin-left: 6.75rem;
+  object-fit: cover;
+  width: 33.875rem;
+  height: 11.938rem;
+}
+
+.viewpast {
+  background: #DE4C31;
+  color: white;
+  padding: 1rem;
+  margin: .313rem;
+}
+
+.monthlybox {
+  background-color: #44559C;
+  height: 5rem;
+}
+
+.monthrecords h4{
+  color: white;
+}
+
+.monthlyrecords p{
+  color: white;
+}
+
+.monthlygrid {
+  display: grid;
+  justify-content: space-between;
+  padding: 20px 20px 20px 108px;
+  max-width: 960px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 45px;
+}
+
+h11 {
+  font-size: 1.375rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signupform {
+  position: relative;
+  text-align: center;
+}
+
+.signpic {
+  object-fit: cover;
+  height: 9rem;
+  width: 83%;
+  margin-left: 6.75rem;
+}
+
+.signtype {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 164px;
+}
+
+input {
+  padding: 1rem;
+  padding-right: 10rem;
+  margin: 2rem 0;
+}
+
+subbutton {
+  padding: 0.5rem;
+  margin: 2rem 0;
+  width: 40%;
+}
+
+/* SHOPPING */
+.discoverheader {
+  font-weight: bold;
+  color: #44559C;
+  font-size: 2.25rem;
+}
+
+.newmusicgrid {
+  display: flex;
+}
+
+.purgatory {
+  font-weight: 600;
+  color: #DE4C31;
+  font-size: 1.75rem;
+}
+
+.conditionbox {
+  display: flex;
+}
+
+.conditionbutton {
+  padding: 1rem;
+  margin: .5rem 0;
+}
+
+.reviewsbox p{
+  size: .5rem;
+  text-align: center;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.reviewsbox {
+  background-color: #497B51;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10.5rem;
+  height: 16.688rem;
+  clip-path: ellipse(84px 126px);
+}
+
+/* ABOUTUS */
+.ourjounrey {
+  font-weight: bold;
+  color: #497B51;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.dot {
+  margin-left: 12rem;
+  height: 103px;
+  width: 120px;
+  background-color: #DE4C31;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.ourmission {
+  margin-left: 6.75rem;
+}
+
+.mission {
+  display: flex;
+}
+
+.factsbox h3{
+  font-weight: 200;
+  font-size: 2.25rem;
+  color: white;
+}
+
+.factsbox p{
+  color: white;
+}
+
+.factsbox {
+  text-align: center;
+  display: grid;
+  justify-content: space-between;
+  padding: 40px 120px 40px 120px;
+  max-width: 1280px;
+  grid-template-columns: 1fr 1fr;
+  background-color: #497B51;
+}
+
+.storebox {
+  display: flex;
+}
+
+
+/* SELLING */
+.sellingsteps {
+  background-color: #44559C;
+}
+
+.sellingsteps h4{
+  color: white;
+  text-align: center;
+}
+
+.sellingbox {
+  display: flex;
+}
+
+.qualitygrid {
+  display: grid;
+  justify-content: space-between;
+  padding: 20px 20px 20px 108px;
+  max-width: 960px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 45px;
+}
+
+.questionsbox h4{
+  color: #497B51;
+  text-align: center;
+}
+
+.accordion {
+  background-color: #497B51;
+  color: white;
+}
+
+/* WISHLIST */
+.albumgrid {
+  display: grid;
+  justify-content: space-between;
+  padding: 20px 20px 20px 108px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.album2 p{
+  color: black;
+}
+
+
+/* FOOTER */
+footer {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  background-color: #44559C;
+  color: white;
+  padding: 0 10%;
+  min-height: 302px;
+  padding-top: 30px;
+}
+
+.footerhead2 img{
+  display: flex;
+  margin-top: .5rem;
+}
+
+p12 {
+  color: white;
+  font-weight: bold;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+p13 {
+  color: white;
+  font-size: 0.625rem;
+}
+
+.bottomfooter {
+  align-items: center;
 }

@@ -15,9 +15,9 @@
     <input type="text" placeholder="Search">  
     <h1 class="logo">
       <a href="a"><img src="images/NWV-logo.svg" alt="logo" class="logo_img"></a>
+    </h1>
     <span class="material-symbols-outlined">
       shopping_cart</span>
-    </h1>
   </header>
   <header class="header2">
     <nav class="nav">
@@ -32,49 +32,60 @@
   </header>
   <script src="js/script.js"></script>
 <main>
-  <img src="images/homepage-main.jpg">
-  <h2>Essential Vinyl Collection</h2>
-  <h4>Classic Rock Edition</h4>
-  
-  <div class="home-essential">
-    <img src="images/SgtPepper.jpg">
-    <p>The Beatles:  “Sgt Pepper’s Lonely Hearts Club Band”</p>
-  </div>
-  <div class="home-essential">
-    <img src="images/HotelCalifornia.jpg">
-    <p>The Eagles: “Hotel California”</p>
-  </div>
-  <div class="home-essential">
-    <img src="images/III.jpg">
-    <p>Led Zeppelin: “III”</p>
-  </div>
-  <div class="home-essential">
-    <img src="images/DarkSideMoon.jpg">
-    <p>Pink Floyd: “Dark Side of the Moon”</p>
-  </div>
-  <div class="home-essential">
-    <img src="images/Doors.jpg">
-    <p>The Doors: “The Doors”</p>
+  <img class="home" src="images/homepage-main.jpg">
+<div class="essentail-collection">
+  <div class="collectiontype">
+  <h4>Essential Vinyl Collection</h4>
+  <h6>Classic Rock Edition</h6>
   </div>
 
+<div class="grid-container">
+  <div class="home-essential">
+    <img class="essential" src="images/SgtPepper.jpg">
+    <p class="classicrock-p">The Beatles:  “Sgt Pepper’s Lonely Hearts Club Band”</p>
+  </div>
+  <div class="home-essential">
+    <img class="essential" src="images/HotelCalifornia.jpg">
+    <p class="classicrock-p">The Eagles: “Hotel California”</p>
+  </div>
+  <div class="home-essential">
+    <img class="essential" src="images/III.jpg">
+    <p class="classicrock-p">Led Zeppelin: “III”</p>
+  </div>
+  <div class="home-essential">
+    <img class="essential" src="images/DarkSideMoon.jpg">
+    <p class="classicrock-p">Pink Floyd: “Dark Side of the Moon”</p>
+  </div>
+  <div class="home-essential">
+    <img class="essential" src="images/Doors.jpg">
+    <p class="classicrock-p">The Doors: “The Doors”</p>
+  </div>
+</div>
+</div>
+
   <div class="weekalbum">
-    <img src="images/homepage-1.jpg">
-    <h4>Album of the Week
-      Tim: “Let it Bleed Edition”</h4>
+    <img class="week" src="images/homepage-1.jpg">
+    <div class="bleededition">
+    <h6 class="albumofweek">Album of the Week
+      Tim: “Let it Bleed Edition”</h6>
     <div class="viewpastbutton">
       <button type="submit" class="viewpast">View Past</button>
     </div>
+    </div>
   </div>
 
+<div class="monthlybox">
   <div class="monthrecords">
-    <h3>Records of the Month</h3>
+    <h4>Records of the Month</h4>
   </div>
+</div>
+  <div class="monthlygrid">
     <div class="monthlyrecords">
       <img src="images/Acid-album.jpg">
       <p>Ray Barretto: “Acid”</p>
     </div>
     <div class="monthlyrecords">
-      <img src="images/DMC-album.webp">
+      <img src="images/DMC-album.jpg">
       <p>Run-D.M.C: “Tougher Than Leather”</p>
     </div>
     <div class="monthlyrecords">
@@ -82,26 +93,28 @@
       <p>Bobbie Gentry: “Ode to Billie Joe”</p>
     </div>
     <div class="monthlyrecords">
-      <img src="images/Golden-album.png">
+      <img src="images/Golden-album.jpg">
       <p>Jung Kook: “GOLDEN”</p>
     </div>
     <div class="monthlyrecords">
       <img src="images/Higher-album.jpg">
       <p>Chris Stapleton: “Higher”</p>
     </div>
-  
+  </div>
+
   <div class="signupform">
-    <img src="images/signinphoto.jpg">
-    <h3>Sign Up Today</h3>
+    <img class="signpic" src="images/signinphoto.jpg">
+    <div class="signtype">
+    <h4>Sign Up Today</h4>
     <label for=email></label>
      <input id=emailform name=email type="text" placeholder="Email">
      <button type="submit" class="subbutton">Subscribe</button> 
+    </div>
   </div>
 
 <footer>
-  <div class="footerhead">
+  <div class="footerhead1">
     <p>Helpful Links</p>
-  </div>
   <ul>
     <li><a href="a">About Us</a></li>
     <li><a href="a">Join the Club</a></li>
@@ -109,10 +122,14 @@
     <li><a href="a">Seller Policy</a></li>
     <li><a href="a">Returns & Refunds</a></li>
   </ul>
-  <div class="footerhead">
+  </div> 
+   
+  <div class="footerhead2">
     <p>Follow Us</p>
-  </div>
-  <p>COPYRIGHTS NEW WAVE VIYNL, ALL RIGHTS RESERVED ©2023</p>
+    <img src="images/socialmediaicons.svg"></div>
+
+  <footer div class="bottomfooter">
+  <p>COPYRIGHTS NEW WAVE VIYNL, ALL RIGHTS RESERVED ©2023</p></footer>
 </footer>
 </main>
 </body>
