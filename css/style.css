@@ -24,8 +24,18 @@ body{
  padding: 50px 20px 0px;
 }
 
+.searchbutton {
+  padding: .5rem;
+  border-radius: 1.5rem;
+  margin: 1rem 0;
+  border:#44559C;
+  width: 18rem;
+  color: #44559C;
+}
+
 .material-symbols-outlined {
   color: white;
+  padding-right: 5rem;
 }
 
 .header2 {
@@ -39,6 +49,14 @@ body{
 
 .logo img {
   width: 150%;
+}
+
+.logo {
+  padding-right: 17rem;
+}
+
+.nav {
+  margin: 0 auto;
 }
 
 .nav ul {
@@ -68,7 +86,12 @@ body{
 
 .essentail-collection {
   display: flex;
-  margin-left: 6.75rem;
+  margin: 0 auto;
+}
+
+.collectiontype {
+  margin-left: 105px;
+  margin-top: 1rem;
 }
 
 h4 {
@@ -120,6 +143,12 @@ h6 {
   display: flex;
 }
 
+.bleededition {
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
 .albumofweek {
   text-align: center;
 }
@@ -148,24 +177,25 @@ button {
 
 .monthlybox {
   background-color: #44559C;
-  height: 5rem;
+  height: 15rem;
+  position: relative;
+  margin-bottom: 132px;
 }
 
 .monthrecords h4{
   color: white;
-}
-
-.monthlyrecords p{
-  color: white;
+  padding: 2rem;
+  padding-left: 6rem;
+  margin: 0 auto;
 }
 
 .monthlygrid {
   display: grid;
-  justify-content: space-between;
-  padding: 20px 20px 20px 108px;
+  margin: 0 auto;
+  justify-content: center;
   max-width: 960px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 45px;
+  column-gap: 35px;
 }
 
 h11 {
@@ -182,7 +212,6 @@ h11 {
   object-fit: cover;
   height: 9rem;
   width: 83%;
-  margin-left: 6.75rem;
 }
 
 .signtype {
@@ -192,27 +221,61 @@ h11 {
   left: 164px;
 }
 
+.signtype h4{
+  color: white;
+}
+
 input {
-  padding: 1rem;
+  padding: 0.938rem;
   padding-right: 10rem;
   margin: 2rem 0;
 }
 
-subbutton {
-  padding: 0.5rem;
+.subbutton {
+  padding: .5rem;
+  border-radius: 0;
   margin: 2rem 0;
-  width: 40%;
+  border: none;
+  width: 13.322rem;
+  background: #44559C;
+  color: white;
 }
 
 /* SHOPPING */
+
+.sidescolumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.leftside {
+  width: 50%;
+}
+
+.rightside {
+  width: 50%;
+}
+
 .discoverheader {
   font-weight: bold;
   color: #44559C;
   font-size: 2.25rem;
 }
 
-.newmusicgrid {
+.shoppingalubm {
+  padding-left: 6.75rem;
+}
+
+.musicflex {
   display: flex;
+}
+
+.newmusicgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 65rem;
+  height: 27rem;
 }
 
 .purgatory {
@@ -221,21 +284,65 @@ subbutton {
   font-size: 1.75rem;
 }
 
-.conditionbox {
-  display: flex;
+fieldset {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-auto-rows: 40px;
 }
 
-.conditionbutton {
+input[type=radio] {
+  height: 1.5rem;
+  width: 3.188rem;
+  vertical-align: middle;
+}
+
+.vinylbutton {
   padding: 1rem;
   margin: .5rem 0;
 }
 
+.trackheader {
+  color: #DE4C31;
+  font-size: 1.375rem;
+  padding: 3rem 0rem 2% 7rem;
+}
+
+.trackgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 7rem;
+  width: 62.5rem;
+  font-size: 1.25rem;
+}
+
+.tracknames {
+  list-style: decimal;
+}
+
+.tracktimes {
+  list-style: none;
+}
+
+
+.reviewheader{
+  color: #497B51;
+  margin-left: 3rem;
+}
+
 .reviewsbox p{
-  size: .5rem;
   text-align: center;
   color: white;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.shop-grid-container{
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   margin: 0 auto;
+   display: grid;
+   margin: 0 auto;
+   justify-content: center;
+   max-width: 960px;
 }
 
 .reviewsbox {
@@ -245,12 +352,23 @@ subbutton {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 10.5rem;
-  height: 16.688rem;
-  clip-path: ellipse(84px 126px);
+  width: 12.5rem;
+  height: 19.688rem;
+  clip-path: ellipse(92px 133px);
 }
 
 /* ABOUTUS */
+.wish {
+  object-fit: cover;
+  height: 9rem;
+  width: 83%;
+  margin-left: 6.75rem;
+}
+
+.wishimagebox {
+
+}
+
 .ourjounrey {
   font-weight: bold;
   color: #497B51;
@@ -265,6 +383,15 @@ subbutton {
   background-color: #DE4C31;
   border-radius: 50%;
   display: inline-block;
+}
+
+.missiontype{
+  text-align: center;
+}
+
+.missiontype p{
+  text-align: left;
+  padding: 2rem;
 }
 
 .ourmission {
@@ -295,10 +422,23 @@ subbutton {
   background-color: #497B51;
 }
 
-.storebox {
-  display: flex;
+.aboutfacts {
+  margin: 0 auto;
 }
 
+.vistheader {
+  text-align: center;
+}
+
+.storebox {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+} 
+
+.locationpin span{
+  color: #DE4C31;
+}
 
 /* SELLING */
 .sellingsteps {
@@ -334,6 +474,30 @@ subbutton {
 }
 
 /* WISHLIST */
+.pinnedwishes-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wishimagebox {
+  position: relative;
+  text-align: center;
+}
+
+.filterbutton {
+  background-color: #DE4C31;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+
+.albuminfo {
+  padding: 1rem;
+}
+
+.albums1 p{
+  text-align: center;
+}
+
 .albumgrid {
   display: grid;
   justify-content: space-between;
@@ -341,8 +505,36 @@ subbutton {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.album2 p{
+.albums2 {
+  display: grid;
+  justify-content: center;
+}
+
+.albums2 p{
   color: black;
+  text-align: center;
+}
+
+.cartbutton {
+  background-color:#44559C;
+  color: #FFFFFF;
+  padding: .85rem;
+  margin: .313rem;
+}
+
+.instock {
+  background-color: #497B51;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.instock p{
+  color:#FFFFFF;
+}
+
+.bold {
+  font-weight: bolder;
 }
 
 
@@ -355,6 +547,17 @@ footer {
   padding: 0 10%;
   min-height: 302px;
   padding-top: 30px;
+}
+
+.footer-container {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-weight: 400;
+}
+
+.footer-container2 {
+  font-size: 0.625rem;
 }
 
 .footerhead2 img{

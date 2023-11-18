@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="header1">
-    <input type="text" placeholder="Search">  
+    <input class="searchbutton" type="text" placeholder="Search">  
     <h1 class="logo">
       <a href="a"><img src="images/NWV-logo.svg" alt="logo" class="logo_img"></a>
     </h1>
@@ -30,70 +30,94 @@
       </ul>
     </nav>
   </header>
+
  <main>
-  <h3 class="discoverheader">Discover New Music</h3>
+<div class="sidescolumns">
+<div class="leftside">
+  <img class=shoppingalubm src="images/TC-1.jpg">
+<h5 class="trackheader">Track List</h5>
+<div class="trackgrid">
+  <div class="tracknames">
+    <li>“I Swear (To God)”</li> 
+    <li>“Feathered Indians”</li>
+    <li>“Tattoos”</li>
+    <li>“Born Again”</li>
+    <li>“Whitehouse Road”</li>
+    <li>“Banded Clovis”</li>
+    <li>“Purgatory”</li>
+    <li>“Honky Tonk Flame”</li>
+    <li>“Universal Sound”</li>
+    <li>“Lady May”</li>
+  </div>
+  <div class="tracktimes">
+    <li>03:20</li>
+    <li>03:44</li>
+    <li>03:23</li>
+    <li>03:28</li>
+    <li>04:40</li>
+    <li>04:19</li>
+    <li>02:46</li>
+    <li>04:57</li>
+    <li>03:41</li>
+    <li>03:03</li>
+  </div>
+</div>
+</div>
+
+<div class="rightside">
   <div class="newmusicgrid">
-  <img src="images/TC-1.jpg">
-  <h5 class="purgatory">Purgatory</h5>
-  <p>Tyler Childers</p>
+    <div class="discoverheader">
+      <h3>Discover New Music</h3>
+    </div>
+    <div class="purgatory">
+      <h5>Purgatory</h5>
+      <p>Tyler Childers</p>
+    </div>
   <div class="shoppingformats">
     <p>Format:</p> 
     <p>LP Vinyl</p> 
     <p>Condition:</p>
     <p>Mint</p>
     <p>14 available</p>
+    <h3>
+      $17.99 </h3>
+    <div class="conditionbox">
+      <div class="vinylbutton">
+        <button type="menu">See all 14 Vinyls
+      from $17.23</button>
+      </div>
+    </div>
   </div>
-  <h3>
-    $17.99 </h3>
+  </div>  
+  <div class="condition">
+    <p>Select Condition:</p>
+    <fieldset>
+    <input class="conditionbutton" id="mint" name="condition" value="Mint
+    $17.99" type="radio">
+      <label for="mint">Mint<br>$17.99</label>
+    <input class="conditionbutton" id="nearmint" name="condition" value="Near Mint
+    unavailable" type="radio">
+      <label for="nearmint">Near Mint<br>unavailable</label>
+    <input class="conditionbutton" id="goodplus" name="condition" value="Very Good Plus
+    $15.23" type="radio">
+      <label for="goodplus">Very Good Plus<br>$15.23</label>
+    <input class="conditionbutton"  id="verygood" name="condition" value="Very Good
+    unavailable" type="radio">
+      <label for="verygood">Very Good<br>unavailable</label>
+    <input class="conditionbutton" id="good" name="condition" value="Good 
+    $9.15" type="radio">
+      <label for="good">Good<br>$9.15</label>
+    <input class="conditionbutton" id="poor" name="condition" value="Poor
+    unavailable" type="radio">
+      <label for="poor">Poor<br>unavailable</label>
+    </fieldset>
+  </div>
+  <p class="shoppingpar">What is life like in east Kentucky? You can hop a plane or load up your car to live among its backwaters and rolling hills populated by folks whose lives are the definition of “country.” Or you can push play on Tyler Childers’ pointedly titled Purgatory.</p>
+</div>
+</div> 
 
-  <div class="conditionbox">
-  <button type="menu" class="vinylbutton">See all 14 Vinyls
-    from $17.23</button>
-  <p>Select Condition:</p>
-  <input class="conditionbutton" id="mint" name="condition" value="Mint
-  $17.99" type="submit">
-  <input class="conditionbutton" id="nearmint" name="condition" value="Near Mint
-  unavailable" type="submit">
-  <input class="conditionbutton" id="goodplus" name="condition" value="Very Good Plus
-  $15.23" type="submit">
-  <input class="conditionbutton"  id="verygood" name="condition" value="Very Good
-  unavailable" type="submit">
-  <input class="conditionbutton" id="good" name="condition" value="Good 
-  $9.15" type="submit">
-  <input class="conditionbutton" id="poor" name="condition" value="Poor
-  unavailable" type="submit">
-</div>
-</div>
-
-  <h5>Track List</h5>
-<div class="tracknames">
-  <li>“I Swear (To God)”</li> 
-  <li>“Feathered Indians”</li>
-  <li>“Tattoos”</li>
-  <li>“Born Again”</li>
-  <li>“Whitehouse Road”</li>
-  <li>“Banded Clovis”</li>
-  <li>“Purgatory”</li>
-  <li>“Honky Tonk Flame”</li>
-  <li>“Universal Sound”</li>
-  <li>“Lady May”</li>
-</div>
-<div class="tracktimes">
-  <li>03:20</li>
-  <li>03:44</li>
-  <li>03:23</li>
-  <li>03:28</li>
-  <li>04:40</li>
-  <li>04:19</li>
-  <li>02:46</li>
-  <li>04:57</li>
-  <li>03:41</li>
-  <li>03:03</li>
-</div>
-<p>What is life like in east Kentucky? You can hop a plane or load up your car to live among its backwaters and rolling hills populated by folks whose lives are the definition of “country.” Or you can push play on Tyler Childers’ pointedly titled Purgatory.</p>
-
-<h4>Customer Reviews</h4>
-<div class="grid-container">
+<h4 class="reviewheader">Customer Reviews</h4>
+<div class="shop-grid-container">
   <div class="reviewsbox">
   <p>“Bought a record from NWV, loved that it came in secure packaging and had a quality check card.”</p>
   <p>-Sophia R.</p>  
@@ -109,6 +133,10 @@
   <div class="reviewsbox">
     <p>“I love the Discovering New Music feature, it makes finding music online more personable”</p>
     <p>-Ashley M.</p>   
+  </div>
+  <div class="reviewsbox">
+    <p>“NWV makes it so easy to find and sell your records, all with affordable pricing too!”</p>
+    <p> -Liam K.</p>   
   </div>
 </div>
 
