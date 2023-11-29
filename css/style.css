@@ -21,7 +21,7 @@ body{
  min-height: 74px;
  display: flex;
  justify-content: space-between;
- padding: 50px 20px 0px;
+ padding: 50px 30px 12px;
 }
 
 .searchbutton {
@@ -33,9 +33,10 @@ body{
   color: #44559C;
 }
 
-.material-symbols-outlined {
+.fa-cart-shopping {
   color: white;
   padding-right: 5rem;
+  font-size: 2rem;
 }
 
 .header2 {
@@ -161,6 +162,19 @@ button {
   width: 40%;
 }
 
+button:hover {
+  background: #497B51;
+}
+
+button:active {
+  background: #44559C;
+}
+
+button:focus {
+  background: #DE4C31;
+  border: #497B51;
+}
+
 .week {
   margin-left: 6.75rem;
   object-fit: cover;
@@ -206,23 +220,28 @@ h11 {
 .signupform {
   position: relative;
   text-align: center;
+  margin-top: 5.375rem;
 }
 
 .signpic {
   object-fit: cover;
-  height: 9rem;
+  height: 11rem;
   width: 83%;
 }
 
 .signtype {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 2rem;
   position: absolute;
-  bottom: 20px;
+  bottom: 125px;
   left: 164px;
 }
 
 .signtype h4{
   color: white;
+  text-align: left;
 }
 
 input {
@@ -246,59 +265,114 @@ input {
 .sidescolumns {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
 }
 
+/* LEFT */
 .leftside {
   width: 50%;
 }
 
-.rightside {
-  width: 50%;
+.shopbuttons {
+  position: absolute;
+  display: flex;
+  gap: 22.5rem;
+  top: 95%;
 }
 
-.discoverheader {
-  font-weight: bold;
+.shoppingx {
+  background-color:#DE4C31;
+  color: #FFFFFF;
+  clip-path: circle(50%);
+  width: 59px;
+  height: 59px;
+  font-size: 2rem;
+}
+
+.shoppingcartbutton {
+  background-color: #44559C;
+  clip-path: circle(50%);
+  width: 59px;
+  height: 59px;
+}
+
+.carouselArrow {
+  background-color: transparent;
+  font-size: 4rem;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  gap: 23rem;
+  cursor: pointer;
+}
+
+.previous {
+  left: 0px;
+}
+
+.next {
+  right: 0px;
+}
+
+.carouselArrow:hover{
   color: #44559C;
-  font-size: 2.25rem;
+  background-color: transparent;
+}
+
+.carouselArrow:active{
+  color: #497B51;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.carouselArrow:focus{
+  color: #DE4C31;
+  background-color: transparent;
 }
 
 .shoppingalubm {
-  padding-left: 6.75rem;
-}
-
-.musicflex {
   display: flex;
+  flex: 0 auto;
 }
 
-.newmusicgrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  width: 65rem;
-  height: 27rem;
+.carousel {
+  max-width: 980px;
+  margin: 0 auto;
+  max-height: 20rem;
+  padding-left: 7rem;
+  position: relative;
 }
 
-.purgatory {
-  font-weight: 600;
-  color: #DE4C31;
-  font-size: 1.75rem;
+.slide {
+  display: flex;
+  flex: 0 0 30.438rem;
 }
 
-fieldset {
-  display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px;
-  grid-auto-rows: 40px;
+.tiles {
+  max-width: 100%;
+  display: flex;
+  overflow: hidden;
 }
 
-input[type=radio] {
-  height: 1.5rem;
-  width: 3.188rem;
-  vertical-align: middle;
+.paginationDots {
+  display: flex;
+  justify-content: center;
+  transform: translateY(20px);
 }
 
-.vinylbutton {
-  padding: 1rem;
-  margin: .5rem 0;
+.paginationDots li {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #44559C;
+  border-radius: 0.625rem;
+  margin: 0 5px;
+  opacity: .4;
+  cursor: pointer;
+}
+
+.paginationDots li.active {
+  opacity: 1;
 }
 
 .trackheader {
@@ -311,7 +385,7 @@ input[type=radio] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-left: 7rem;
-  width: 62.5rem;
+  width: 38rem;
   font-size: 1.25rem;
 }
 
@@ -321,28 +395,110 @@ input[type=radio] {
 
 .tracktimes {
   list-style: none;
+  text-align: right;
 }
 
+/* RIGHT */
+.discoverheader {
+  font-weight: bold;
+  color: #44559C;
+  font-size: 2.25rem;
+}
+
+.musicflex {
+  display: flex;
+}
+
+.newmusicgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 35rem;
+}
+
+.shoppingformats{
+  width: 15rem;
+}
+
+.purgatory {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.purgatory h5{
+  font-weight: 600;
+  color: #DE4C31;
+  font-size: 1.75rem;
+}
+
+.purgatoryright h3{
+  font-weight: 600;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.vinylbutton {
+  background-color: #DE4C31;
+  color: #FFFFFF;
+  width: 215px;
+  height: 105px;
+  font-size: 1.25rem;
+  padding: 2rem;
+}
+
+.grid-conditions {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-auto-rows: 40px;
+  row-gap: 2rem;
+}
+
+.grid-conditions {
+  color: #DE4C31;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type=checkbox] {
+  opacity: 0;
+  }
+
+.container {
+  accent-color: #44559C;
+  border: 1px solid #44559C;
+  height: 4rem;
+  width: 12rem;
+  text-align: center;
+}
+
+.container:checked + label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  &::after {
+    border: 2px solid blue;
+  }
+}
 
 .reviewheader{
   color: #497B51;
   margin-left: 3rem;
-}
-
-.reviewsbox p{
-  text-align: center;
-  color: white;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin-top: 4rem;
 }
 
 .shop-grid-container{
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    margin: 0 auto;
    display: grid;
-   margin: 0 auto;
+   padding: 1rem 0rem 1rem 0rem;
    justify-content: center;
    max-width: 960px;
+}
+
+.shoppingpar {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  padding: 1rem;
 }
 
 .reviewsbox {
@@ -353,8 +509,15 @@ input[type=radio] {
   align-items: center;
   justify-content: center;
   width: 12.5rem;
-  height: 19.688rem;
+  height: 18rem;
   clip-path: ellipse(92px 133px);
+}
+
+.reviewsbox p{
+  text-align: center;
+  color: white;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 /* ABOUTUS */
@@ -362,11 +525,6 @@ input[type=radio] {
   object-fit: cover;
   height: 9rem;
   width: 83%;
-  margin-left: 6.75rem;
-}
-
-.wishimagebox {
-
 }
 
 .ourjounrey {
@@ -376,13 +534,40 @@ input[type=radio] {
   text-align: center;
 }
 
-.dot {
-  margin-left: 12rem;
-  height: 103px;
-  width: 120px;
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 2rem 10rem 2rem 10rem;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.timelinebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timehead {
   background-color: #DE4C31;
-  border-radius: 50%;
-  display: inline-block;
+  width: 8.688rem;
+  height: 8.9379rem;
+  clip-path:circle(50%);
+}
+
+h5.timehead {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.timelinetype {
+  padding: 0 1rem 0 1rem;
+  text-align: center;
 }
 
 .missiontype{
@@ -400,6 +585,16 @@ input[type=radio] {
 
 .mission {
   display: flex;
+}
+
+.fa-user-group {
+  color: #FFFFFF;
+  font-size: 3rem;
+}
+
+.fa-face-smile {
+  color: #FFFFFF;
+  font-size: 3rem;
 }
 
 .factsbox h3{
@@ -428,43 +623,107 @@ input[type=radio] {
 
 .vistheader {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .storebox {
   display: flex;
-  justify-content: center;
-  gap: 15rem;
+  gap: 5rem;
+  padding: 2rem 8rem 0 14.563rem;
 } 
 
-.locationpin span{
+.location {
+  display: flex;
+  gap: 2rem;
+}
+
+.location p{
+  font-size: 1.25rem;
+}
+
+.fa-location-dot {
   color: #DE4C31;
+  font-size: 4rem;
 }
 
 /* SELLING */
+
+/* created as a box for the selling steps content */
 .sellingsteps {
   background-color: #44559C;
+  height: 23rem;
 }
 
 .sellingsteps h4{
   color: white;
   text-align: center;
+  padding: 1rem 0rem 1rem 0rem;
 }
 
+.step-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.steps-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* the green circle behind each step number */
+.steps {
+  background-color: #497B51;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.688rem;
+  height: 8.9379rem;
+  clip-path:circle(50%);
+}
+
+.steps-box h2 {
+  font-size: 3.438rem;
+  color: #FFFFFF;
+}
+/* p for selling steps, padding to keep it center in the coloumn */
+.steptype p{
+  text-align: center;
+  padding: 1rem 5.5rem 1rem 5.5rem;
+  color: #FFFFFF;
+}
+/* containing the image and p */
 .sellingbox {
   display: flex;
+  margin: 0rem 7rem 0rem 7rem;
 }
 
+.sellingbox p{
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+/* container for quality check section, centering with padding */
+.qualityflex {
+ display: flex;
+ padding: 2rem 8rem 2rem 7rem;
+ gap: 8rem;
+}
+/* grid and center for quality images and p */
 .qualitygrid {
   display: grid;
-  justify-content: space-between;
-  padding: 20px 20px 20px 108px;
-  max-width: 960px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 45px;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  column-gap: 3rem;
 }
 
 .questionsbox h4{
   color: #497B51;
+  text-align: center;
+  margin-top: 2rem;
+}
+/* to center each box with the page */
+.boxesquestions {
   text-align: center;
 }
 
@@ -472,75 +731,199 @@ input[type=radio] {
   background-color: #497B51;
   color: white;
 }
-
-/* WISHLIST */
-.pinnedwishes-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+/* to postion it with the image correctly */
+.signup-type {
+  position: absolute;
+  bottom: 20px;
+  left: 164px;
 }
 
+.signup-type h4 {
+  color: #FFFFFF;
+  padding-left: 7rem;
+}
+/* stylizing the signup button */
+.signbutton {
+  width: 150.234px;
+  height: 44px;
+  background-color:#44559C;
+  color: #FFFFFF;
+}
+
+/* WISHLIST */
+
+/* centering image and type */
 .wishimagebox {
   position: relative;
   text-align: center;
 }
-
+/* postioning and styling header type correctly */
+.wishimagebox h2{
+  position: absolute;
+  top: 51px;
+  left: 224px;
+  color: white;
+  font-size: 3rem;
+}
+/* styled with dropdown and button like look */
 .filterbutton {
   background-color: #DE4C31;
   color: #FFFFFF;
+  margin: 2rem;
+  margin-left: 7rem;
+  width: 25%;
+  height: 3.5rem;
   padding: 1rem;
-}
-
-.albuminfo {
-  padding: 1rem;
-}
-
-.albums1 p{
   text-align: center;
+  border-radius: 2rem;
 }
-
-.albumgrid {
+/* for favorite albumns that are pinned */
+.pinnedwishes-grid{
   display: grid;
-  justify-content: space-between;
-  padding: 20px 20px 20px 108px;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0rem 7rem 3rem 7rem;
+  column-gap: 4.688rem;
 }
 
-.albums2 {
-  display: grid;
-  justify-content: center;
+.fa-thumbtack {
+  color: #DE4C31;
+  font-size: 3rem;
+  transform: rotate(318deg);
 }
 
-.albums2 p{
-  color: black;
-  text-align: center;
+.pin1 {
+  position: absolute;
+  left: 7.5rem;
+}
+
+.pin2 {
+  position: absolute;
+  left: 31rem;
+}
+
+.pin3 {
+  position: absolute;
+  left: 55rem;
 }
 
 .cartbutton {
   background-color:#44559C;
   color: #FFFFFF;
-  padding: .85rem;
-  margin: .313rem;
+  padding: 1.5rem;
+  border-radius: 13.5rem;
+  margin:  1rem 0;
+  width: 60%;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.albuminfo {
+  margin-top: 1rem;
+}
+
+.albuminfo p{
+  font-size: 1.15rem;
+}
+/* centering content with image */
+.albums1 {
+  text-align: center;
+}
+/* grid for wishlist regular content */
+.albumgrid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0rem 7rem 0rem 7rem;
+  row-gap: 3rem;
+  column-gap: 4.688rem;
+}
+/* stylizing album info and centering cart button */
+.albums2 {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.fa-heart {
+  color: #DE4C31;
+  font-size: 2rem;
+}
+
+.heart1 {
+  position: absolute;
+  top: 75rem;
+  left: 8rem;
+}
+
+.heart2 {
+  position: absolute;
+  top: 75rem;
+  left: 32rem;
+}
+
+.heart3 {
+  position: absolute;
+  top: 75rem;
+  left: 55rem;
+}
+
+.heart4 {
+  position: absolute;
+  top: 109rem;
+  left: 8rem;
+}
+
+.heart5 {
+  position: absolute;
+  top: 109rem;
+  left: 32rem;
+}
+
+.heart6 {
+  position: absolute;
+  top: 109rem;
+  left: 55rem;
 }
 
 .instock {
   background-color: #497B51;
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding-bottom: 1rem;
+  width: 12%;
+  position: absolute;
+  margin-left: 9rem;
 }
 
 .instock p{
   color:#FFFFFF;
+  padding-top: 1rem;
 }
 
 .bold {
   font-weight: bolder;
 }
 
+.nextbuttonbox {
+  text-align: right;
+}
+
+.nextbutton {
+  background-color: #DE4C31;
+  color: #FFFFFF;
+  width: 20%;
+  padding: .75rem;
+  margin-top: 3rem;
+  margin-right: 8rem;
+}
+
+.fa-chevron-right {
+  font-size: 2rems;
+}
 
 /* FOOTER */
 footer {
-  display: flex;
+  display: grid;
   font-family: 'Poppins', sans-serif;
   background-color: #44559C;
   color: white;
@@ -550,24 +933,17 @@ footer {
 }
 
 .footer-container {
-  width: 100%;
-  text-align: left;
-  color: white;
-  font-weight: 400;
+  display: flex;
+  column-gap: 15rem;
 }
 
 .footer-container2 {
   font-size: 0.625rem;
+  text-align: center;
 }
 
-.footerhead2 img{
-  display: flex;
-  margin-top: .5rem;
-}
-
-p12 {
-  color: white;
-  font-weight: bold;
+.footerseperate {
+  padding-bottom: 1rem;
 }
 
 a {
@@ -577,13 +953,4 @@ a {
 
 footer ul {
   list-style-type: none;
-}
-
-p13 {
-  color: white;
-  font-size: 0.625rem;
-}
-
-.bottomfooter {
-  align-items: center;
 }

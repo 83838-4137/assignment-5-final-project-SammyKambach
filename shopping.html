@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Tilt+Warp&display=swap" rel="stylesheet">
@@ -14,18 +14,17 @@
   <header class="header1">
     <input class="searchbutton" type="text" placeholder="Search">  
     <h1 class="logo">
-      <a href="a"><img src="images/NWV-logo.svg" alt="logo" class="logo_img"></a>
+      <a href="index.html"><img src="images/NWV-logo.svg" alt="logo" class="logo_img"></a>
     </h1>
-    <span class="material-symbols-outlined">
-      shopping_cart</span>
+    <i class="fa-solid fa-cart-shopping"></i>
   </header>
   <header class="header2">
     <nav class="nav">
       <ul>
-        <li><a href="a">Personal Shopper</a></li>
-        <li><a href="a">About Us</a></li>
-        <li><a href="a">Sell to Us </a></li>
-        <li><a href="a">Your Wishlist </a></li>
+        <li><a href="shopping.html">Personal Shopper</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="selling.html">Sell to Us </a></li>
+        <li><a href="wishlist.html">Your Wishlist </a></li>
         <li><a href="a">Your Profile </a></li>
       </ul>
     </nav>
@@ -34,7 +33,47 @@
  <main>
 <div class="sidescolumns">
 <div class="leftside">
-  <img class=shoppingalubm src="images/TC-1.jpg">
+
+<div class="carousel">
+  <div class="shopbuttons">
+    <button type="button" class="shoppingx"><i class="fa-solid fa-x"></i></button>
+    <button type="button" class="shoppingcartbutton"><i class="fa-solid fa-cart-shopping"></i></button>
+  </div>
+  <div class="nextbuttons">
+    <button type="button" class="carouselArrow previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <button type="button" class="carouselArrow next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <div class="tiles">
+    <li class="slide">
+      <div class="cards">
+        <img class=shoppingalubm src="images/tylerc1.jpg" alt="Purgatory by Tyler Childers cover #1">
+      </div>
+    </li>
+    <li class="slide">
+      <div class="cards">
+        <img class=shoppingalubm src="images/tylerc2.jpg" alt="Purgatory by Tyler Childers cover #2">
+      </div>
+    </li>
+    <li class="slide">
+      <div class="cards">
+        <img class=shoppingalubm src="images/tylerc3.jpg" alt="Purgatory by Tyler Childers cover #3">
+      </div>
+    </li>
+    <li class="slide">
+      <div class="cards">
+        <img class=shoppingalubm src="images/tylerc4.jpg" alt="Purgatory by Tyler Childers cover #4">
+      </div>
+    </li>
+  </div>
+  <ul class="paginationDots">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+
 <h5 class="trackheader">Track List</h5>
 <div class="trackgrid">
   <div class="tracknames">
@@ -65,7 +104,6 @@
 </div>
 
 <div class="rightside">
-  <div class="newmusicgrid">
     <div class="discoverheader">
       <h3>Discover New Music</h3>
     </div>
@@ -73,45 +111,48 @@
       <h5>Purgatory</h5>
       <p>Tyler Childers</p>
     </div>
+<div class="newmusicgrid">
   <div class="shoppingformats">
-    <p>Format:</p> 
-    <p>LP Vinyl</p> 
-    <p>Condition:</p>
-    <p>Mint</p>
+    <p>Format:</p>
+    <p class="bold"> LP Vinyl</p>
+    <p>Condition:</p> 
+    <p class="bold">Mint</p>
     <p>14 available</p>
-    <h3>
-      $17.99 </h3>
+  </div>
+  <div class="purgatoryright">
+    <h3>$17.99</h3>
     <div class="conditionbox">
-      <div class="vinylbutton">
-        <button type="menu">See all 14 Vinyls
+        <button class="vinylbutton" type="menu">See all 14 Vinyls
       from $17.23</button>
-      </div>
     </div>
   </div>
-  </div>  
-  <div class="condition">
-    <p>Select Condition:</p>
+</div>  
+
     <fieldset>
-    <input class="conditionbutton" id="mint" name="condition" value="Mint
-    $17.99" type="radio">
-      <label for="mint">Mint<br>$17.99</label>
-    <input class="conditionbutton" id="nearmint" name="condition" value="Near Mint
-    unavailable" type="radio">
-      <label for="nearmint">Near Mint<br>unavailable</label>
-    <input class="conditionbutton" id="goodplus" name="condition" value="Very Good Plus
-    $15.23" type="radio">
-      <label for="goodplus">Very Good Plus<br>$15.23</label>
-    <input class="conditionbutton"  id="verygood" name="condition" value="Very Good
-    unavailable" type="radio">
-      <label for="verygood">Very Good<br>unavailable</label>
-    <input class="conditionbutton" id="good" name="condition" value="Good 
-    $9.15" type="radio">
-      <label for="good">Good<br>$9.15</label>
-    <input class="conditionbutton" id="poor" name="condition" value="Poor
-    unavailable" type="radio">
-      <label for="poor">Poor<br>unavailable</label>
+    <legend class="boxes">Select Condition:</legend>
+    <div class="grid-conditions">
+    <input id="mint" name="condition" value="Mint
+    $17.99" type="checkbox">
+      <label class="container" for="mint">Mint<br>$17.99</label>
+    <input id="nearmint" name="condition" value="Near Mint
+    unavailable" type="checkbox">
+      <label class="container" for="nearmint">Near Mint<br>unavailable</label>
+    <input id="goodplus" name="condition" value="Very Good Plus
+    $15.23" type="checkbox">
+      <label class="container" for="goodplus">Very Good Plus<br>$15.23</label>
+    <input  id="verygood" name="condition" value="Very Good
+    unavailable" type="checkbox">
+      <label class="container" for="verygood">Very Good<br>unavailable</label>
+    <input id="good" name="condition" value="Good 
+    $9.15" type="checkbox">
+      <label class="container" for="good">Good<br>$9.15</label>
+    <input id="poor" name="condition" value="Poor
+    unavailable" type="checkbox">
+      <label class="container" for="poor">Poor<br>unavailable</label>
+    </div>
     </fieldset>
-  </div>
+
+
   <p class="shoppingpar">What is life like in east Kentucky? You can hop a plane or load up your car to live among its backwaters and rolling hills populated by folks whose lives are the definition of “country.” Or you can push play on Tyler Childers’ pointedly titled Purgatory.</p>
 </div>
 </div> 
@@ -140,26 +181,82 @@
   </div>
 </div>
 
-  <footer>
-    <div class="footerhead1">
-      <p>Helpful Links</p>
-    <ul>
-      <li><a href="a">About Us</a></li>
-      <li><a href="a">Join the Club</a></li>
-      <li><a href="a">FAQ's</a></li>
-      <li><a href="a">Seller Policy</a></li>
-      <li><a href="a">Returns & Refunds</a></li>
-    </ul>
-    </div> 
-     
-    <div class="footerhead2">
-      <p>Follow Us</p>
-      <img src="images/socialmediaicons.svg"></div>
-  
-    <footer div class="bottomfooter">
-    <p>COPYRIGHTS NEW WAVE VIYNL, ALL RIGHTS RESERVED ©2023</p></footer>
-  </footer>
+<footer>
+  <div class="footer-container">
+  <div class="footer-colom1">
+    <p class="footerseperate">Helpful Links</p>
+  <ul>
+    <li><a href="a">About Us</a></li>
+    <li><a href="a">Join the Club</a></li>
+    <li><a href="a">FAQ's</a></li>
+    <li><a href="a">Seller Policy</a></li>
+    <li><a href="a">Returns & Refunds</a></li>
+  </ul>
+  </div>
+  <div class="footer-colom2">
+    <p class="footerseperate">Follow Us</p>
+    <img src="images/socialmediaicons.svg">
+  </div>
+</div>
+
+
+<div class="footer-container2">
+  <p>COPYRIGHTS NEW WAVE VIYNL, ALL RIGHTS RESERVED ©2023</p>
+</div>
+</footer>
  </main> 
- <script src="js/script.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    var previousButton, nextButton;
+    var carouselContainer, cards, pageDots;
+    var leftSlideIndex = 0;
+
+    window.addEventListener('DOMContentLoaded', function(e) {
+      previousButton = document.querySelector('.previous');
+      nextButton = document.querySelector('.next');
+      carouselContainer = document.querySelector('.tiles');
+      cards = carouselContainer.querySelectorAll('.slide');
+      pageDots = document.querySelectorAll('.paginationDots li');
+
+      previousButton.addEventListener('click',previousSlide);
+      nextButton.addEventListener('click', nextSlide);
+
+      pageDots.forEach(function (dot) {
+        dot.addEventListener('click', function (e) {
+          goToSlide(Array.prototype.slice.call(pageDots).index0f(e.target));
+        });
+      });
+    });
+
+    function previousSlide() {
+      if (leftSlideIndex > 0) {
+        goToSlide(leftSlideIndex - 1);
+      } else {
+        goToSlide(cards.length -1);
+      }
+      }
+      function nextSlide() {
+        if (leftSlideIndex < cards.length - 1) {
+          goToSlide(leftSlideIndex + 1);
+        } else {
+          goToSlide(0);
+        }
+        }
+      function goToSlide(nextLeftSlideIndex) {
+        $(carouselContainer).animate({
+          scrollLeft: carouselContainer.offsetWidth / 3 * nextLeftSlideIndex },
+          {
+            duration: 200 });
+           
+pageDots.forEach(function (dot) {
+  dot.classList.remove('active');
+});
+
+pageDots[nextLeftSlideIndex].classList.add('active');
+
+  leftSlideIndex = nextLeftSlideIndex;
+
+    }
+  </script>
 </body>
 </html>
