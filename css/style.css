@@ -99,11 +99,9 @@ h4 {
   color:#DE4C31;
   font-weight: bold;
   font-size: 2rem;
-  font-family: 'Poppins', sans-serif;
 }
 
 h6 {
-  font-family: 'Poppins', sans-serif;
   font-size: 1.375rem;
   font-weight: 100;
 }
@@ -251,7 +249,7 @@ input {
 }
 
 .subbutton {
-  padding: .5rem;
+  padding: 1rem;
   border-radius: 0;
   margin: 2rem 0;
   border: none;
@@ -264,13 +262,14 @@ input {
 
 .sidescolumns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 635px 635px;
+  column-gap: 5px;
   margin-top: 3rem;
 }
 
 /* LEFT */
 .leftside {
-  width: 50%;
+  width: 95%;
 }
 
 .shopbuttons {
@@ -307,11 +306,11 @@ input {
 }
 
 .previous {
-  left: 0px;
+  left: 22px;
 }
 
 .next {
-  right: 0px;
+  right: -90px;
 }
 
 .carouselArrow:hover{
@@ -412,11 +411,12 @@ input {
 .newmusicgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 35rem;
+  width: 48rem;
 }
 
 .shoppingformats{
   width: 15rem;
+  font-size: 1.2rem;
 }
 
 .purgatory {
@@ -427,13 +427,13 @@ input {
 .purgatory h5{
   font-weight: 600;
   color: #DE4C31;
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 .purgatoryright h3{
   font-weight: 600;
   font-size: 2.25rem;
-  text-align: center;
+  padding-left: 6rem;
 }
 
 .vinylbutton {
@@ -447,8 +447,9 @@ input {
 
 .grid-conditions {
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px;
-  grid-auto-rows: 40px;
+  grid-template-columns: 2px 200px 2px 200px 2px 200px;
+  grid-template-rows: repeat(2, 50px);
+  grid-auto-row: 40px;
   row-gap: 2rem;
 }
 
@@ -460,13 +461,34 @@ fieldset {
   border: none;
 }
 
+.boxes {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
 input[type=checkbox] {
   opacity: 0;
   }
 
-.container {
+input[type=checkbox]:checked + label {
+  background-color: #fff;
   accent-color: #44559C;
-  border: 1px solid #44559C;
+  border: 2px solid #44559C;
+  &::after {
+    border: 2px solid #44559C;
+  }
+}
+
+label {
+  height: 100%;
+
+}
+
+input[type=checkbox]:disabled + label {
+  border: 2px dashed #44559C;
+}
+
+.container {
   height: 4rem;
   width: 12rem;
   text-align: center;
@@ -480,10 +502,15 @@ input[type=checkbox] {
   }
 }
 
+.shoppingpar {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
 .reviewheader{
   color: #497B51;
   margin-left: 3rem;
-  margin-top: 4rem;
 }
 
 .shop-grid-container{
@@ -493,12 +520,6 @@ input[type=checkbox] {
    padding: 1rem 0rem 1rem 0rem;
    justify-content: center;
    max-width: 960px;
-}
-
-.shoppingpar {
-  margin-top: 2rem;
-  font-size: 1.25rem;
-  padding: 1rem;
 }
 
 .reviewsbox {
@@ -550,6 +571,7 @@ input[type=checkbox] {
   align-items: center;
 }
 
+
 .timehead {
   background-color: #DE4C31;
   width: 8.688rem;
@@ -563,6 +585,7 @@ h5.timehead {
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
+  font-size: 1.5rem;
 }
 
 .timelinetype {
