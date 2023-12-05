@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Tilt+Warp&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   <header class="header1">
     <input class="searchbutton" type="text" placeholder="Search">  
     <h1 class="logo">
-      <a href="index.html"><img src="images/NWV-logo.svg" alt="logo" class="logo_img"></a>
+      <a href="index.html"><img src="images/NWV-logo.svg" alt="New Wave Viynl logo" class="logo_img"></a>
     </h1>
     <i class="fa-solid fa-cart-shopping"></i>
   </header>
@@ -31,7 +31,7 @@
   </header>
  
   <div class="wishimagebox">
-    <img class="wish" src="images/selling1.jpg">
+    <img class="wish" src="images/selling1.jpg" alt="Selling header image">
     <h2>The Selling Guide</h2>
   </div>
 
@@ -66,22 +66,22 @@
   </div>
   
   <div class="sellingbox">
-  <img src="images/sellingpic.jpg">
+  <img src="images/sellingpic.jpg" alt="selling your records image">
   <p>Got a stack of records you haven’t played in years?<br>We’ll help clear up your collection</p></div>
 
 <div class="qualityflex">
   <h4 class="checkheader">Our Quality Check</h4>
   <div class="qualitygrid">
   <div class="qualitybox">
-    <img src="images/quality1.jpg">
+    <img src="images/quality1.jpg" alt="quality check 1 image">
     <p>Does your record have scratches or cracks?</p>
   </div>
   <div class="qualitybox">
-    <img src="images/bentrecord.jpg">
+    <img src="images/bentrecord.jpg" alt="quality check 2 image">
     <p>At eye-level is your record bent or warped?</p>
   </div>
   <div class="qualitybox">
-    <img src="images/ripped.jpg">
+    <img src="images/ripped.jpg" alt="quality check 3 image">
     <p>Is your record cover stained or ripped?</p>
   </div>
 </div>
@@ -92,28 +92,28 @@
   <div class="boxesquestions">
   <button class="accordion">How do we receive our payment?</button>
   <div class="panel">
-    <p hidden>You can access your PayOuts through your account page. Here you can select between store credit or cash out via PayPal</p>
+    <p>You can access your PayOuts through your account page. Here you can select between store credit or cash out via PayPal</p>
   </div>
 
   <button class="accordion">What happens to records that don’t sell?</button>
   <div class="panel">
-    <p hidden>We keep all records available even if they don’t sell right away. But when our warehouse gets overstocked, we’ll do a sale</p>
+    <p>We keep all records available even if they don’t sell right away. But when our warehouse gets overstocked, we’ll do a sale</p>
   </div>
 
   <button class="accordion">Do you take multiple copies of the same album?</button>
   <div class="panel">
-   <p hidden>Yes, we’ll take multiple copies if our warehouse has space. As we want to give customers several options for pricing</p>
+   <p>Yes, we’ll take multiple copies if our warehouse has space. As we want to give customers several options for pricing</p>
   </div>
 
   <button class="accordion">What happens if my record isn’t sellable? </button>
   <div class="panel">
-    <p hidden>If your record isn’t sellable we’ll donate the record to a charity shop work, where someone else can get some use out of it</p>
+    <p>If your record isn’t sellable we’ll donate the record to a charity shop work, where someone else can get some use out of it</p>
   </div>
 </div>
 </div>
 
 <div class="signupform">
-  <img class="signpic" src="images/register.jpg">
+  <img class="signpic" src="images/register.jpg" alt="sign-up to sell image">
   <div class="signup-type">
   <h4>Register Today</h4>
   <button type="submit" class="signbutton">Sign-Up</button></div> 
@@ -124,7 +124,7 @@
   <div class="footer-colom1">
     <p class="footerseperate">Helpful Links</p>
   <ul>
-    <li><a href="a">About Us</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
     <li><a href="a">Join the Club</a></li>
     <li><a href="a">FAQ's</a></li>
     <li><a href="a">Seller Policy</a></li>
@@ -133,16 +133,38 @@
   </div>
   <div class="footer-colom2">
     <p class="footerseperate">Follow Us</p>
-    <img src="images/socialmediaicons.svg">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-x-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-pinterest"></i>
   </div>
 </div>
-
 
 <div class="footer-container2">
   <p>COPYRIGHTS NEW WAVE VIYNL, ALL RIGHTS RESERVED ©2023</p>
 </div>
 </footer>
 
-  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 </html>
