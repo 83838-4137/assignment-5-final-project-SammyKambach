@@ -37,6 +37,7 @@ body{
   border:#44559C;
   width: 18rem;
   color: #44559C;
+  padding: 0.75rem;
 }
 
 .logo img {
@@ -104,7 +105,7 @@ h6 {
 /* contains the grid for essential albums */
 .grid-container {
   display: grid;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 100px 20px 20px;
   max-width: 960px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   column-gap: 5px;
@@ -926,6 +927,19 @@ footer {
 a {
   color: white;
   text-decoration: none;
+}
+
+.footer-colom1 a:hover{
+  color: #DE4C31;
+}
+
+.footer-colom1 a:active{
+  color: #497B51;
+}
+
+.footer-colom1 a:focus{
+  color: #DE4C31;
+  stroke: 1px solid #497B51;
 }
 
 footer ul {
