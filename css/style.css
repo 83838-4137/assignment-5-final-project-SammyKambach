@@ -1,0 +1,947 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+/* icons default size */
+.fa-brands {
+  font-size: 1.2rem;
+}
+
+/* defult used throughout */
+.bold {
+  font-weight: bolder;
+}
+
+/* Header */
+.header1 {
+ background-color: #497B51;
+ align-items: center;
+ display: flex;
+ justify-content: space-between;
+ padding: 50px 37px 12px 66px;
+}
+/* stylzing for the search button with purple border */
+.searchbutton {
+  border-radius: 1.5rem;
+  border:#44559C;
+  width: 18rem;
+  color: #44559C;
+  padding: 0.75rem;
+}
+
+.logo img {
+  width: 150%;
+}
+/* to help center the logo in the header */
+.logo {
+  padding-right: 17rem;
+}
+/* style for the cart icon with right padding */
+.fa-cart-shopping {
+  color: white;
+  padding-right: 5rem;
+  font-size: 2rem;
+}
+
+.header2 {
+  background-color: #44559C;
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+}
+/* centers the heading links */
+.nav {
+  margin: 0 auto;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  column-gap: 90px;
+  letter-spacing: 1px;
+}
+
+.nav a:hover {
+  color: #DE4C31;
+}
+
+/* HOME */
+.home {
+  object-fit: cover;
+  height: 9rem;
+  width: 83%;
+  margin-left: 6.75rem;
+}
+/* places the weekly album selection to the left of the header */
+.essentail-collection {
+  display: flex;
+}
+
+.collectiontype {
+  margin-left: 6.563rem;
+  margin-top: 1rem;
+}
+/* for the "essential vinyl collection" header */
+h4 {
+  color:#DE4C31;
+  font-size: 2rem;
+}
+/* "classic rock edition" header */
+h6 {
+  font-size: 1.375rem;
+  font-weight: 100;
+}
+/* contains the grid for essential albums */
+.grid-container {
+  display: grid;
+  padding: 20px 100px 20px 20px;
+  max-width: 960px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+/* style for oval behind albums */
+.home-essential {
+  background-color: #497B51;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 9.5rem;
+  height: 15.688rem;
+  clip-path: ellipse(70px 120px);
+}
+
+.classicrock-p {
+  text-align: center;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.weekalbum {
+  display: flex;
+}
+
+.week {
+  margin-left: 6.75rem;
+  object-fit: cover;
+  width: 33.875rem;
+  height: 11.938rem;
+}
+
+.bleededition {
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+button {
+  padding: .5rem;
+  border-radius: 1.5rem;
+  margin: 1rem 0;
+  border: none;
+  width: 40%;
+}
+
+button:hover {
+  background: #497B51;
+}
+
+button:active {
+  background: #44559C;
+}
+
+button:focus {
+  background: #DE4C31;
+  border: #497B51;
+}
+/* button design for view past */
+.viewpast {
+  background: #DE4C31;
+  color: white;
+  padding: 1rem;
+  margin: .313rem;
+}
+/* height and margin to help overlap album covers and proper spacing with rest of elements */
+.monthlybox {
+  background-color: #44559C;
+  height: 15rem;
+  margin-bottom: 132px;
+}
+
+.monthrecords h4{
+  color: white;
+  padding: 2rem;
+  padding-left: 6rem;
+}
+/* center type below album covers */
+.monthlypar{
+  text-align: center;
+}
+/* spacing and grid for monthly album covers */
+.monthlygrid {
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 960px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 35px;
+}
+/* reusued throughout other pages as default form */
+.signupform {
+  position: relative;
+  text-align: center;
+  margin-bottom: -0.5rem;
+}
+
+.signpic {
+  object-fit: cover;
+  height: 11rem;
+  width: 83%;
+}
+/* positioning for header */
+.signtype {
+  height: 2rem;
+  position: absolute;
+  bottom: 125px;
+  left: 164px;
+}
+
+.signtype h4{
+  color: white;
+  text-align: left;
+  margin-bottom: -1rem;
+}
+/* defult input for forms */
+input {
+  padding: 0.938rem;
+  padding-right: 10rem;
+  margin: 2rem 0;
+}
+/* style for subscribe button with negative margin to remove gap */
+.subbutton {
+  padding: 1rem;
+  border-radius: 0;
+  width: 13.322rem;
+  background: #44559C;
+  color: white;
+  margin-left: -0.3rem;
+}
+
+/* SHOPPING */
+.sidescolumns {
+  display: grid;
+  grid-template-columns: 635px 635px;
+  margin-top: 3rem;
+}
+
+/* LEFT */
+.leftside {
+  width: 95%;
+}
+/* padding to get album cover to show correct size*/
+.carousel {
+  max-height: 20rem;
+  padding-left: 7rem;
+  position: relative;
+}
+/* placing reject and cart button in correct place*/
+.shopbuttons {
+  position: absolute;
+  display: flex;
+  gap: 22.5rem;
+  top: 95%;
+}
+
+.shoppingx {
+  background-color:#DE4C31;
+  color: #FFFFFF;
+  clip-path: circle(50%);
+  width: 59px;
+  height: 59px;
+  font-size: 2rem;
+}
+
+.shoppingcartbutton {
+  background-color: #44559C;
+  clip-path: circle(50%);
+  width: 59px;
+  height: 59px;
+}
+/* to not have arrow buttons crossing over eachother */
+.previous {
+  left: 22px;
+}
+/* to not have arrow buttons crossing over eachother */
+.next {
+  right: -90px;
+}
+
+.carouselArrow {
+  background-color: transparent;
+  font-size: 4rem;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.carouselArrow:hover{
+  color: #44559C;
+  background-color: transparent;
+}
+
+.carouselArrow:focus{
+  color: #DE4C31;
+  background-color: transparent;
+}
+/* to hid rest of albums for JS */
+.tiles {
+  max-width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+/* to sort albums in a horizontal line */
+.slide {
+  display: flex;
+}
+
+.paginationDots {
+  display: flex;
+  justify-content: center;
+  transform: translateY(20px);
+}
+/* made them purple to match design library */
+.paginationDots li {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #44559C;
+  border-radius: 0.625rem;
+  margin: 0 5px;
+  opacity: .4;
+  cursor: pointer;
+}
+
+.paginationDots li.active {
+  opacity: 1;
+}
+/* padding to have track list header in correct place without being behing album covers */
+.trackheader h2{
+  color: #DE4C31;
+  font-size: 1.6rem;
+  padding: 8rem 0rem 2rem 7rem;
+}
+/* to sort track names and times into grid */
+.trackgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 8rem;
+  font-size: 1.25rem;
+}
+
+.tracknames ul{
+  list-style: decimal;
+}
+
+.tracktimes ul{
+  list-style: none;
+  text-align: right;
+}
+
+/* RIGHT */
+.rightside {
+  width: 90%;
+}
+
+.discoverheader {
+  color: #44559C;
+  font-size: 2.25rem;
+}
+/* stylizing type */
+.purgatory {
+  margin-bottom: 4rem;
+}
+.purgatory h2{
+  font-weight: 600;
+  color: #DE4C31;
+  font-size: 2rem;
+}
+.purgatoryright h3 {
+  font-size: 2rem;
+  text-align: right;
+}
+/* grid to seperate content properly */
+.newmusicgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.shoppingformats{
+  font-size: 1.2rem;
+}
+/* had to change the color for accessibility reasons */
+.vinylbutton {
+  background-color: #44559C;
+  color: #FFFFFF;
+  width: 215px;
+  height: 105px;
+  font-size: 1.25rem;
+  padding: 2rem;
+  margin-left: 6rem;
+}
+/*grid for select conditions*/
+.grid-conditions {
+  display: grid;
+  grid-template-columns: 2px 150px 2px 150px 2px 150px;
+  grid-template-rows: repeat(2, 50px);
+  row-gap: 2rem;
+  margin-left: 4rem;
+  color: #44559C;
+}
+
+fieldset {
+  border: none;
+}
+/*style for "select condionts:"*/
+.boxes {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+/*hidding checkbox*/
+input[type=checkbox] {
+  opacity: 0;
+}
+/*style for when avaible boxes are checked, green color box for accessibility*/
+input[type=checkbox]:checked + label {
+  background-color: #fff;
+  accent-color: #497B51;
+  border: 2px solid #497B51;
+}
+/*for unavailable conditions*/
+input[type=checkbox]:disabled + label {
+  border: 2px dashed #DE4C31;
+}
+/*for the conditions type style*/
+.container {
+  height: 4rem;
+  width: 9rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shoppingpar {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+.reviewheader{
+  color: #497B51;
+  margin-top: 1rem;
+  margin-left: 7rem;
+}
+/*for customer reviews circles grid, repurposed coding from homepage circles, but adjusted to this design*/
+.shop-grid-container{
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  display: grid;
+  padding: 1rem 0rem 1rem 0rem;
+  justify-content: center;
+  max-width: 960px;
+}
+/*customer review circles type orientation*/
+.reviewsbox {
+  background-color: #497B51;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 12.5rem;
+  height: 18rem;
+  clip-path: ellipse(92px 133px);
+}
+
+.reviewsbox p{
+  text-align: center;
+  color: white;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* ABOUTUS */
+/* for adjusting image to correct size */
+.wish {
+  object-fit: cover;
+  height: 9rem;
+  width: 83%;
+}
+
+.ourjourney h3{
+  font-weight: bold;
+  color: #497B51;
+  font-size: 2rem;
+  text-align: center;
+}
+/* grid for timeline, with aligning items to have timeline line correct in middle */
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 2rem 10rem 2rem 10rem;
+  align-items: center;
+}
+/* to create timeline line at bottom of each box to form one long line */
+.timeline-borderbottom {
+  border-bottom: 5px solid #497B51;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* style for timeline circles */
+.timehead {
+  background-color: #DE4C31;
+  width: 8.688rem;
+  height: 8.9379rem;
+  clip-path:circle(50%);
+}
+/* makes each time in the circle centered */
+h5.timehead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+/* seperate class for timeline type to be centered */
+.timelinetype {
+  padding: 0 1rem 0 1rem;
+  text-align: center;
+}
+/* timeline line on the top to create on long line */
+.timeline-borderbottom2 {
+  border-top: 5px solid #497B51;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -0.7rem;
+}
+/* to place our mission type next to image */
+.mission {
+  display: flex;
+}
+/* for the image on mission section */
+.ourmission {
+  margin-left: 6.75rem;
+}
+/* centers the our mission header */
+.missiontype{
+  text-align: center;
+}
+/* padding to place type in the center and remove runt */
+.missiontype p{
+  text-align: left;
+  padding: 1rem 7.5rem 2rem 4rem;
+}
+
+.fa-user-group {
+  color: #FFFFFF;
+  font-size: 3rem;
+}
+
+.fa-face-smile {
+  color: #FFFFFF;
+  font-size: 3rem;
+}
+/* style for grid and green box section */
+.factsbox {
+  text-align: center;
+  display: grid;
+  justify-content: space-between;
+  padding: 40px 120px 40px 120px;
+  max-width: 1280px;
+  grid-template-columns: 1fr 1fr;
+  background-color: #497B51;
+}
+
+.factsbox h3{
+  font-weight: 200;
+  font-size: 2.25rem;
+  color: white;
+}
+
+.factsbox p{
+  color: white;
+}
+
+.vistheader {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.storebox {
+  display: flex;
+  gap: 5rem;
+  padding: 2rem 8rem 0 14.563rem;
+} 
+
+.location {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.fa-location-dot {
+  color: #DE4C31;
+  font-size: 4rem;
+}
+
+/* SELLING */
+.sellingsteps {
+  background-color: #44559C;
+  height: 23rem;
+}
+
+.sellingsteps h4{
+  color: white;
+  text-align: center;
+  padding: 1rem 0rem 1rem 0rem;
+}
+/* organizes the selling steps circles */
+.step-grid {
+  display: grid;
+  grid-template-columns: 15rem 15rem 15rem 15rem;
+  justify-content: center;
+}
+/* keeps each selling step circle centered */
+.steps-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* the green circle behind each step number */
+.steps {
+  background-color: #497B51;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.688rem;
+  height: 8.9379rem;
+  clip-path:circle(50%);
+}
+
+.steps-box h2 {
+  font-size: 3.438rem;
+  color: #FFFFFF;
+}
+/* p for selling steps, padding to keep it center in the coloumn */
+.steptype p{
+  text-align: center;
+  padding: 1rem 2rem;
+  color: #FFFFFF;
+}
+/* containing the image and p */
+.sellingbox {
+  display: flex;
+  margin: 0rem 7rem 0rem 7rem;
+}
+
+.sellingbox p{
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+/* container for quality check section, centering with padding */
+.qualityflex {
+ display: flex;
+ padding: 2rem 8rem 2rem 7rem;
+ gap: 8rem;
+}
+/* grid and center for quality images and p */
+.qualitygrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  column-gap: 3rem;
+}
+
+.questionsbox h4{
+  color: #497B51;
+  text-align: center;
+  margin-top: 2rem;
+}
+/* to center each box with the page */
+.boxesquestions {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+/* for drop down questions */
+.accordion {
+  background-color: #497B51;
+  color: white;
+  padding: 18px;
+  width: 50%;
+}
+/* kept same color for design purposes */
+.active, .accordion:hover {
+  background-color: #497B51
+}
+/* has negative margin to place answer box under question */
+.panel {
+  background-color: #44559C;
+  border-radius: 40px;
+  margin: -3rem 8rem 1rem 21.5rem;
+  width: 597px;
+  height: 141px;
+  padding: 1rem;
+  display: none;
+  overflow: hidden;
+}
+
+.panel p {
+  padding: 2.5rem 1.125rem;
+  color: #FFFFFF;
+}
+
+/* to postion it with the image correctly */
+.signup-type {
+  position: absolute;
+  bottom: 20px;
+  left: 164px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.signup-type h4 {
+  color: #FFFFFF;
+  padding-left: 7rem;
+}
+/* stylizing the signup button */
+.signbutton {
+  width: 150.234px;
+  height: 44px;
+  background-color:#44559C;
+  color: #FFFFFF;
+}
+
+/* WISHLIST */
+.wishimagebox {
+  position: relative;
+  text-align: center;
+  margin-bottom: -0.5rem;
+}
+/* postioning and styling header type correctly */
+.wishimagebox h2{
+  position: absolute;
+  top: 51px;
+  left: 224px;
+  color: white;
+  font-size: 3rem;
+}
+/* styled with dropdown and button like look */
+.filterbutton {
+  background-color: #497B51;
+  color: #FFFFFF;
+  margin: 2rem;
+  margin-left: 7rem;
+  width: 25%;
+  height: 3.5rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 2rem;
+}
+/* for favorite albumns that are pinned */
+.pinnedwishes-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0rem 7rem 3rem 7rem;
+  column-gap: 4.688rem;
+}
+/* placed shadow for visiblity purpose */
+.fa-thumbtack {
+  color: #DE4C31;
+  text-shadow: 1px 2px #FFFFFF;
+  font-size: 3rem;
+  transform: rotate(318deg);
+}
+/* each on individual class for custome placing */
+.pin1 {
+  position: absolute;
+  left: 7.5rem;
+}
+
+.pin2 {
+  position: absolute;
+  left: 31rem;
+}
+
+.pin3 {
+  position: absolute;
+  left: 55rem;
+}
+
+.cartbutton {
+  background-color:#44559C;
+  color: #FFFFFF;
+  padding: 1rem;
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+.albuminfo {
+  margin-top: 1rem;
+}
+
+.albuminfo p{
+  font-size: 1.15rem;
+}
+/* centering content with image */
+.albums1 {
+  text-align: center;
+}
+/* grid for wishlist regular content */
+.albumgrid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0rem 7rem 0rem 7rem;
+  row-gap: 3rem;
+  column-gap: 4.688rem;
+}
+/* stylizing album info and centering cart button */
+.albums2 {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+/* each on individual class for custom placing  */
+.fa-heart {
+  color: #DE4C31;
+  font-size: 2rem;
+}
+
+.heart1 {
+  position: absolute;
+  top: 76.5rem;
+  left: 8rem;
+}
+
+.heart2 {
+  position: absolute;
+  top: 76.5rem;
+  left: 32rem;
+}
+
+.heart3 {
+  position: absolute;
+  top: 76.5rem;
+  left: 55rem;
+}
+
+.heart4 {
+  position: absolute;
+  top: 109rem;
+  left: 8rem;
+}
+
+.heart5 {
+  position: absolute;
+  top: 109rem;
+  left: 32rem;
+}
+
+.heart6 {
+  position: absolute;
+  top: 109rem;
+  left: 55rem;
+}
+/* for in-stock box layer ontop of each album cover */
+.instock {
+  background-color: #497B51;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  width: 12%;
+  position: absolute;
+  margin-left: 9rem;
+}
+
+.instock p{
+  color:#FFFFFF;
+  padding-top: .5rem;
+}
+/* to place next button in correct side of the page */
+.nextbuttonbox {
+  text-align: right;
+}
+/* stylized for visability purposes */
+.nextbutton {
+  background-color: #497B51;
+  color: #FFFFFF;
+  width: 20%;
+  padding: .75rem;
+  margin-top: 3rem;
+  margin-right: 8rem;
+}
+
+/* FOOTER */
+footer {
+  display: grid;
+  background-color: #44559C;
+  color: white;
+  padding: 0 10%;
+  min-height: 302px;
+  padding-top: 30px;
+}
+.footer-container {
+  display: flex;
+  column-gap: 8rem;
+}
+/* spacing between each footer section and its pages */
+.footerseperate {
+  padding-bottom: 1rem;
+}
+
+/* seperate for copyright at bottom */
+.footer-container2 {
+  font-size: 0.625rem;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-colom1 a:hover{
+  color: #DE4C31;
+}
+
+.footer-colom1 a:active{
+  color: #497B51;
+}
+
+.footer-colom1 a:focus{
+  color: #DE4C31;
+  stroke: 1px solid #497B51;
+}
+
+footer ul {
+  list-style-type: none;
+}
